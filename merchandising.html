@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Merchandising - Atlético del Horizonte</title>
+  <link rel="stylesheet" href="css/estilo.css">
+  <script defer src="js/carrito.js"></script>
+</head>
+<body>
+  <header>
+    <img src="img/escudo.png" alt="Escudo" class="escudo">
+    <h1>Merchandising</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="resultados.html">Resultados</a></li>
+        <li><a href="noticias.html">Noticias</a></li>
+        <li><a href="merchandising.html">Merchandising</a></li>
+        <li><a href="partidos.html">Partidos Grabados</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h2>Productos oficiales</h2>
+    <div class="productos">
+      <div class="producto">
+        <img src="img/camiseta.png" alt="Camiseta oficial con escudo">
+        <p>Camiseta oficial - 40€</p>
+        <button onclick="agregarAlCarrito('Camiseta oficial', 40)">Añadir al carrito</button>
+      </div>
+      <div class="producto">
+        <img src="img/bufanda.png" alt="Bufanda del club">
+        <p>Bufanda - 15€</p>
+        <button onclick="agregarAlCarrito('Bufanda', 15)">Añadir al carrito</button>
+      </div>
+      <div class="producto">
+        <img src="img/gorra.png" alt="Gorra del club">
+        <p>Gorra - 12€</p>
+        <button onclick="agregarAlCarrito('Gorra', 12)">Añadir al carrito</button>
+      </div>
+      <div class="producto">
+        <img src="img/pantalon.png" alt="Pantalón oficial con escudo">
+        <p>Pantalón oficial - 25€</p>
+        <button onclick="agregarAlCarrito('Pantalón oficial', 25)">Añadir al carrito</button>
+      </div>
+    </div>
+
+    <section id="carrito">
+      <h3>Carrito de compras</h3>
+      <ul id="lista-carrito"></ul>
+      <p>Total: <span id="total">0</span>€</p>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Atlético del Horizonte</p>
+  </footer>
+</body>
+</html>
